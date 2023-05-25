@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import { Link } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState<any>();
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <div>{count}</div>
+      <Link to={'/list'}> list</Link>
     </>
   );
 }
