@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   { path: '/', element: <App /> },
   { path: '/list', element: <List /> },
   { path: '/detail/:detailId', element: <Detail /> },
-],{basename:'./docs'});
+]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
